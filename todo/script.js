@@ -9,11 +9,11 @@
     viewModel.add = function(){
         viewModel.todoList.push(viewModel.todo());
         viewModel.todo('');
-    }
+    };
 
     viewModel.remove = function(data){
         viewModel.todoList.remove(data);
-    }
+    };
 
     viewModel.fadeIn = function(elem){
         if (elem.nodeType === 1)
@@ -26,7 +26,7 @@
     };
 
     viewModel.sort = function(){
-        viewModel.members.sort();
+        viewModel.todoList.sort();
     };
 
     ko.applyBindings(viewModel);
